@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body {
+	line-height: 1.5;
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+	background-color: #fffefe;
+}
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+/*========================================================================
+# title 
+========================================================================*/
+.title h1 {
+	margin-top: 50px;
+	font-size: 50px;
+}
+#line1 {
+	height: 0px;
+	border: none;
+	border-top: 2px solid #f8a41e;
+	margin: auto;
+	width: 30%;
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+/*========================================================================
+# Express Auto Detailing
+========================================================================*/
+
+.card-body {
+	background-color: #fffefe;
+	border: 1px solid #e03426;
+	border-radius: 16px;
+	height: 90%;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	transition: box-shadow 0.3s ease-in-out;
+	margin: 20px;
+}
+
+.EAD-header #ico-CarWash {
+	float: left;
+	width: 70px;
+	margin: 0 0 0 10px;
+}
+.EAD-header #EAD-title {
+	margin-top: 20px;
+	font-size: 40px;
+	color: #1e1e1e;
+	text-align: center;
+}
+@media screen and (min-width: 0px) and (max-width: 450px) {
+	.EAD-header #ico-CarWash {
+		display: none;
+	}
+}
+#line2 {
+	height: 0px;
+	border: none;
+	border-top: 2px solid #f8a41e;
+	margin: auto;
+	width: 95%;
+	margin-top: 28px;
+	margin-bottom: 10px;
+}
+
+/* ===== what's included ===== */
+.panel {
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+/* what's included list */
+ul {
+	list-style: none;
+}
+ul li:before {
+	content: "✓";
+	padding: 10px;
+	color: #f8a41e;
+}
+/* what's included */
+#WIC {
+	font-weight: 400;
+	font-size: 30px;
+	margin: 5px 0 10px 40px;
+}
+
+/*  btn  */
+.button {
+	display: inline-block;
+	border-radius: 100px;
+	background-color: #e03426;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	font-size: 15px;
+	width: 150px;
+	height: 40px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 8px;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: "\00bb";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+a:visited {
+	text-decoration: none;
+	color: #fdf9ff;
+}
+a:hover {
+	text-decoration: none;
+	color: #fdf9ff;
+}
+a:focus {
+	text-decoration: none;
+	color: #fdf9ff;
+}
+a:hover,
+a:active {
+	text-decoration: none;
+	color: #fdf9ff;
+}
+/*========================================================================
+# Car Washes Near Me
+========================================================================*/
+#CWM-title {
+	margin-top: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #1e1e1e;
+	text-align: center;
+}
+#ico-CarWashM {
+	margin-top: 20px;
+	width: 99px;
+}
+#map-container {
+	margin-top: 25px;
+}
+#map-container iframe {
+	border-radius: 16px;
+	width: 100%;
+}

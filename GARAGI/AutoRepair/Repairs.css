@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body {
+	line-height: 1.5;
+	font-family: "Poppins", sans-serif;
+	background-color: #fffefe;
+}
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+/*========================================================================
+# title 
+========================================================================*/
+.title h1 {
+	margin-top: 50px;
+	font-size: 50px;
+	color: #1e1e1e;
+	font-family: Poppins;
+}
+#line1 {
+	height: 0px;
+	border: none;
+	border-top: 2px solid #f8a41e;
+	margin: auto;
+	width: 30%;
+	margin-top: 20px;
+	margin-bottom: 18px;
+}
+.title .description {
+	color: #1e1e1e;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 60px;
+	font-family: Poppins;
+}
+/*========================================================================
+# list accordion
+========================================================================*/
+#icon {
+	width: 45px;
+	margin: 0 20px 0 0;
+}
+/* ===== accordion collapsed ===== */
+.accordion {
+	background-color: #fffefe;
+	color: #1e1e1e;
+	cursor: pointer;
+	padding: 20px;
+	width: 100%;
+	border: 1px solid #e03426;
+	border-radius: 100px;
+	text-align: left;
+	outline: none;
+	font-size: 25px;
+	font-family: poppins;
+	transition: 0.4s;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	transition: box-shadow 0.3s ease-in-out;
+	z-index: -1;
+}
+
+.active,
+.accordion:hover {
+	box-shadow: 0 3px 2.5px rgba(0, 0, 0, 0.2);
+}
+/*  +  */
+.accordion:after {
+	content: "\002B";
+	color: #e03426;
+	font-weight: bold;
+	font-size: 20px;
+	float: right;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+/*  -  */
+.active:after {
+	content: "\2212";
+}
+/* ===== what's included ===== */
+.panel {
+	padding: 0;
+	background-color: none;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.4s ease-out;
+	width: 100%;
+}
+/* what's included list */
+ul {
+	list-style: none;
+}
+ul li:before {
+	content: "✓";
+	padding: 10px;
+	color: #f8a41e;
+}
+/* what's included */
+#WIC {
+	font-weight: 500;
+	font-size: 20px;
+	font-family: poppins;
+	margin: 20px 0 10px 20px;
+}
+/* what's included drop down */
+.panel #drop-down {
+	border: 1px solid #e03426;
+	border-radius: 45px;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-shadow: 0 3px 2.5px rgba(0, 0, 0, 0.2);
+}
+/*  btn  */
+.button {
+	display: inline-block;
+	border-radius: 100px;
+	background-color: #f8a41e;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	font-size: 15px;
+	width: 150px;
+	height: 40px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 8px;
+	font-family: Poppins;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: "\00bb";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+a:visited {
+	text-decoration: none;
+	color: #fdf9ff;
+}
+a:hover {
+	text-decoration: none;
+	color: #fdf9ff;
+}
+a:focus {
+	text-decoration: none;
+	color: #fdf9ff;
+}
+a:hover,
+a:active {
+	text-decoration: none;
+	color: #fdf9ff;
+}
+/*========================================================================
+# technical visit
+========================================================================*/
+.card-body {
+	background-color: #fffefe;
+	border: 1px solid #e03426;
+	border-radius: 16px;
+	height: 440px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	transition: box-shadow 0.3s ease-in-out;
+	
+}
+.card-body:hover {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.22);
+}
+
+.card-body #card-title {
+	font-size: 30px;
+	font-family: Poppins;
+	text-align: center;
+}
+
+.card-text {
+	text-align: center;
+	font-family: Poppins;
+	margin-top: 5%;
+}
+#TV-ico {
+	width: 40%;
+	margin: 10px 0 20px 0;
+}
+@media all and (max-width: 991px) {
+	#TV-ico {
+		width: 150px;
+	}
+}
+#here {
+	color: #e03426;
+	text-decoration: none;
+	font-weight: bold;
+}
+/*-------------------*/
+
+.card {
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid #d2d2dc;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+	box-shadow: 0px 0px 5px 0px rgb(161, 163, 164);
+}
+
+.card .card-body {
+	padding: 1rem 1rem;
+}
+
+.card-body {
+	flex: 1 1 auto;
+	padding: 1.25rem;
+}
+
+.title {
+	font-size: 25px;
+	font-weight: 300;
+	margin-top: 17px;
+	color: #544a26;
+}
+h5 {
+	float: right;
+	color: #e03426;
+	font-family: Poppins;
+	font-weight: 500;
+	font-size: 30px;
+	margin-top: -30px;
+	margin-right: 15px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.modal {
+	text-align: center !important;
+	margin-top: 50px;
+}
+
+.btn-center {
+	margin-top: 200px;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn {
+	border-radius: 2px;
+	text-transform: capitalize;
+	font-size: 15px;
+	padding: 10px 19px;
+	cursor: pointer;
+	color: #fff;
+	width: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	}
+
+/* Modal Content */
+.modal-content {
+	background-color: #fefefe;
+	margin: 0px auto;
+	padding: 2px;
+	border: none;
+	width: 80%;
+}
+
+.modal {
+	margin-top: 0px;
+}
+/* The Close Button */
+.close {
+	color: #e03426;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+	color: #f8a41e;
+	text-decoration: none;
+	cursor: pointer;
+}
+form div.elem-group {
+  margin: 20px 0;
+}
+
+form div.elem-group.inlined {
+  width: 49%;
+  float : left;
+  margin-left: 1%;
+}
+
+form label {
+  display: block;
+  font-family:poppins;
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+form input, select, textarea {
+  border-radius: 2px;
+  border: 1px solid #e03426;
+  border-radius :100px;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: poppins;
+  width: 100%;
+  padding: 10px;
+}
+form #message{
+	border-radius: 16px !important;
+}
+.modal-content h2{
+	color: #f8a41e;
+	font-family:poppins;
+
+}
+.modal-content hr{
+	color: #e03426;
+	width: 50%;
+	display: inline-block;
+}
+form div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+form textarea {
+  height: 250px;
+}
+
+form button {
+  height: 50px;
+  width: 100%;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: poppins;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 10px
+}
+
+form button:hover {
+  background-color: #e03426
+}
+form input{
+	color: rgb(203, 203, 203);
+	font-size: 14px;
+	padding-left: 16px
+}
+
+::placeholder{
+	color: rgb(203, 203, 203);
+	font-size: 14px;
+	padding-left: 16px
+}
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+input:checked {
+	color: #f8a41e;
+  }

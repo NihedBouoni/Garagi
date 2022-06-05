@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<!--font awsome CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+		/>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="shop.css" />
+
+		<title>GARAGI | Shop Accessories</title>
+	</head>
+
+	<body>
+		<!--======================== # title ===========================-->
+		<div class="title">
+			<div class="d-flex justify-content-center">
+				<h1>Car Accessories</h1>
+			</div>
+			<div id="line1"></div>
+		</div>
+		<!--======================== # nav ===========================-->
+
+		<div class="super_container">
+			<!-- Header -->
+			<header class="header">
+				<!-- Header Main -->
+				<div class="header_main">
+					<div class="container">
+						<div class="row">
+							<!-- Logo -->
+							<div class="col-lg-2 col-sm-3 col-3 order-1">
+								<div class="logo_container">
+									<div class="logo"><a href="#">BBB</a></div>
+								</div>
+							</div>
+							<!-- Search -->
+							<div
+								class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right"
+							>
+								<div class="header_search">
+									<div class="header_search_content">
+										<div class="header_search_form_container">
+											<form action="#" class="header_search_form clearfix">
+												<input
+													type="search"
+													required="required"
+													class="header_search_input"
+													placeholder="Search for products..."
+												/>
+												<button
+													type="submit"
+													class="header_search_button trans_300"
+													value="Submit"
+												>
+													<img
+														src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png"
+														alt=""
+													/>
+												</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Wishlist -->
+							<div
+								class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right"
+							>
+								<div
+									class="wishlist_cart d-flex flex-row align-items-center justify-content-end"
+								>
+									<div
+										class="wishlist d-flex flex-row align-items-center justify-content-end"
+									>
+										<div class="wishlist_icon">
+											<img
+												src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918681/heart.png"
+												alt=""
+											/>
+										</div>
+										<div class="wishlist_content">
+											<div class="wishlist_text"><a href="#">Wishlist</a></div>
+											<div class="wishlist_count">10</div>
+										</div>
+									</div>
+									<!-- Cart -->
+									<div class="cart">
+										<div
+											class="cart_container d-flex flex-row align-items-center justify-content-end"
+										>
+											<div class="cart_icon">
+												<img
+													src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918704/cart.png"
+													alt=""
+												/>
+												<div class="cart_count"><span>3</span></div>
+											</div>
+											<div class="cart_content">
+												<div class="cart_text">
+													<a href="#"
+														><button
+															id="cart-btn"
+															type="button"
+															class="btn btn-primary"
+															data-bs-toggle="modal"
+															data-bs-target="#staticBackdrop"
+														>
+															cart
+														</button></a
+													>
+												</div>
+												<div class="cart_price">$185</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<!-- ===== cart popup ==== -->
+		<div
+			class="modal fade"
+			id="staticBackdrop"
+			data-bs-backdrop="static"
+			data-bs-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="staticBackdropLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<h1 id="shop-cart-title">Shopping Cart</h1>
+
+						<div class="shopping-cart">
+							<div class="column-labels">
+								<label class="product-image">Image</label>
+								<label class="product-details">Product</label>
+								<label class="product-price">Price</label>
+								<label class="product-quantity">Quantity</label>
+								<label class="product-removal">Remove</label>
+								<label class="product-line-price">Total</label>
+							</div>
+
+							<div class="product">
+								<div class="product-image">
+									<img src="car-acc1.jpg" />
+								</div>
+								<div class="product-details">
+									<div class="product-title">Dingo Dog Bones</div>
+								</div>
+								<div class="product-price">12.99</div>
+								<div class="product-quantity">
+									<input type="number" value="2" min="1" />
+								</div>
+								<div class="product-removal">
+									<button class="remove-product">
+										<img src="trash.png" id="trash-png" />
+									</button>
+								</div>
+								<div class="product-line-price">25.98</div>
+							</div>
+
+							<div class="product">
+								<div class="product-image">
+									<img src="car-acc3.jpg" />
+								</div>
+								<div class="product-details">
+									<div class="product-title">
+										Nutro™ Adult Lamb and Rice Dog Food
+									</div>
+								</div>
+								<div class="product-price">45.99</div>
+								<div class="product-quantity">
+									<input type="number" value="1" min="1" />
+								</div>
+								<div class="product-removal">
+									<button class="remove-product">
+										<img src="trash.png" id="trash-png" />
+									</button>
+								</div>
+								<div class="product-line-price">45.99</div>
+							</div>
+
+							<div class="totals">
+								<div class="totals-item">
+									<label>Subtotal</label>
+									<div class="totals-value" id="cart-subtotal">71.97</div>
+								</div>
+								<div class="totals-item">
+									<label>Tax (5%)</label>
+									<div class="totals-value" id="cart-tax">3.60</div>
+								</div>
+								<div class="totals-item">
+									<label>Shipping</label>
+									<div class="totals-value" id="cart-shipping">15.00</div>
+								</div>
+								<div class="totals-item totals-item-total">
+									<label>Grand Total</label>
+									<div class="totals-value" id="cart-total">90.57</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+							id="continue-shop-btn"
+						>
+							Continue Shopping
+						</button>
+						<button
+							type="button"
+							id="check-out-popup-btn"
+							class="btn btn-primary"
+						>
+							Check Out
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ============================ Main ============================ -->
+		<div class="container">
+			<div class="row">
+				<div id="product-cards-container" class="col-lg-12">
+					<section class="section-products">
+						<div class="row d-flex justify-content-center">
+							<!-- filter -->
+							<div class="container justify-content-center col-lg-4">
+								<div class="price-slider row">
+									<h2 id="price-title">Price</h2>
+									<div class="min col-lg-6">
+										<h3>Min :</h3>
+										<input
+											id="min"
+											type="number"
+											value="0"
+											min="0 "
+											max="1000"
+										/>
+									</div>
+									<div class="max col-lg-6">
+										<h3>Max :</h3>
+										<input
+											id="max"
+											type="number"
+											value="1000"
+											min="0"
+											max="1000"
+										/>
+									</div>
+									<div id="slider" class="container">
+										<div class="row">
+											<input
+												value="0"
+												min="0"
+												max="1000"
+												step="1"
+												type="range"
+											/>
+											<input
+												value="1000"
+												min="0"
+												max="1000"
+												step="1"
+												type="range"
+											/>
+											<svg width="100%" height="24">></svg>
+										</div>
+										<!--check box-->
+										<div class="check-box-container">
+											<label class="check-container1"
+												><h5 id="one">Car Accessories</h5>
+												<input type="checkbox" checked="checked" />
+												<span class="checkmark"></span>
+											</label>
+											<label class="check-container2"
+												><h5 id="two">car care</h5>
+												<input type="checkbox" checked="checked" />
+												<span class="checkmark"></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Single Product -->
+							<div class="col-md-6 col-lg-4 col-xl-4">
+								<div id="product-1" class="single-product">
+									<div class="part-1">
+										<ul>
+											<li>
+												<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-heart"></i></a>
+											</li>
+
+											<li>
+												<a href="#"><i class="fa fa-expand"></i></a>
+											</li>
+										</ul>
+									</div>
+									<div class="part-2">
+										<h3 class="product-title">Here Product Title</h3>
+										<h4 class="product-old-price">$79.99</h4>
+										<h4 class="product-price">$49.99</h4>
+									</div>
+								</div>
+							</div>
+							<!-- Single Product -->
+							<div class="col-md-6 col-lg-4 col-xl-4">
+								<div id="product-1" class="single-product">
+									<div class="part-1">
+										<ul>
+											<li>
+												<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-heart"></i></a>
+											</li>
+
+											<li>
+												<a href="#"><i class="fa fa-expand"></i></a>
+											</li>
+										</ul>
+									</div>
+									<div class="part-2">
+										<h3 class="product-title">Here Product Title</h3>
+										<h4 class="product-old-price">$79.99</h4>
+										<h4 class="product-price">$49.99</h4>
+									</div>
+								</div>
+							</div>
+							<!-- Single Product -->
+							<div class="col-md-6 col-lg-4 col-xl-4">
+								<div id="product-3" class="single-product">
+									<div class="part-1">
+										<ul>
+											<li>
+												<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-heart"></i></a>
+											</li>
+
+											<li>
+												<a href="#"><i class="fa fa-expand"></i></a>
+											</li>
+										</ul>
+									</div>
+									<div class="part-2">
+										<h3 class="product-title">Here Product Title</h3>
+										<h4 class="product-old-price">$79.99</h4>
+										<h4 class="product-price">$49.99</h4>
+									</div>
+								</div>
+							</div>
+							<!-- Single Product -->
+							<div class="col-md-6 col-lg-4 col-xl-4">
+								<div id="product-1" class="single-product">
+									<div class="part-1">
+										<ul>
+											<li>
+												<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-heart"></i></a>
+											</li>
+
+											<li>
+												<a href="#"><i class="fa fa-expand"></i></a>
+											</li>
+										</ul>
+									</div>
+									<div class="part-2">
+										<h3 class="product-title">Here Product Title</h3>
+										<h4 class="product-old-price">$79.99</h4>
+										<h4 class="product-price">$49.99</h4>
+									</div>
+								</div>
+							</div>
+							<!-- Single Product -->
+							<div class="col-md-6 col-lg-4 col-xl-4">
+								<div id="product-1" class="single-product">
+									<div class="part-1">
+										<ul>
+											<li>
+												<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-heart"></i></a>
+											</li>
+
+											<li>
+												<a href="#"><i class="fa fa-expand"></i></a>
+											</li>
+										</ul>
+									</div>
+									<div class="part-2">
+										<h3 class="product-title">Here Product Title</h3>
+										<h4 class="product-old-price">$79.99</h4>
+										<h4 class="product-price">$49.99</h4>
+									</div>
+								</div>
+							</div>
+							<!-- Single Product -->
+							<div class="col-md-6 col-lg-4 col-xl-4">
+								<div id="product-1" class="single-product">
+									<div class="part-1">
+										<ul>
+											<li>
+												<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-heart"></i></a>
+											</li>
+
+											<li>
+												<a href="#"><i class="fa fa-expand"></i></a>
+											</li>
+										</ul>
+									</div>
+									<div class="part-2">
+										<h3 class="product-title">Here Product Title</h3>
+										<h4 class="product-old-price">$79.99</h4>
+										<h4 class="product-price">$49.99</h4>
+									</div>
+								</div>
+							</div>
+							<!-- Single Product -->
+							<div class="col-md-6 col-lg-4 col-xl-4">
+								<div id="product-3" class="single-product">
+									<div class="part-1">
+										<ul>
+											<li>
+												<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-heart"></i></a>
+											</li>
+
+											<li>
+												<a href="#"><i class="fa fa-expand"></i></a>
+											</li>
+										</ul>
+									</div>
+									<div class="part-2">
+										<h3 class="product-title">Here Product Title</h3>
+										<h4 class="product-old-price">$79.99</h4>
+										<h4 class="product-price">$49.99</h4>
+									</div>
+								</div>
+							</div>
+							<!-- Single Product -->
+							<div class="col-md-6 col-lg-4 col-xl-4">
+								<div id="product-1" class="single-product">
+									<div class="part-1">
+										<ul>
+											<li>
+												<a href="#"><i class="fa fa-shopping-cart"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-heart"></i></a>
+											</li>
+
+											<li>
+												<a href="#"><i class="fa fa-expand"></i></a>
+											</li>
+										</ul>
+									</div>
+									<div class="part-2">
+										<h3 class="product-title">Here Product Title</h3>
+										<h4 class="product-old-price">$79.99</h4>
+										<h4 class="product-price">$49.99</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bootstrap js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+		<!--slider js-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<!-- shop js -->
+		<script src="car-acc.js"></script>
+	</body>
+</html>

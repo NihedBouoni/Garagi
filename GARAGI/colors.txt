@@ -1,0 +1,11 @@
+White : #FFFEF
+
+Yellow : #F8A41E
+
+Red : #E03426
+
+Dark Grey : #1E1E1E
+
+Medium Grey : #353535
+
+Light Grey : #C4C4C4
